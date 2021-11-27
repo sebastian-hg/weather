@@ -1,0 +1,21 @@
+spring:
+  #debug: true
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/freegame
+    username: freegame
+    password: nueva_password
+    initialization-mode: always
+ #   initialization-mode: always
+#  jpa:
+#    hibernate:
+#      ddl-auto: create-drop
+#    properties:
+#      hibernate:
+#        show_sql: true
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+client:
+  openWeatherUrl: api.openweathermap.org/data/2.5/weather
+server:
+  port: 8086
